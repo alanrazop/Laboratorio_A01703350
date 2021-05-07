@@ -33,5 +33,6 @@ img = cv2.imread(imagen, cv2.IMREAD_GRAYSCALE)
 rows = int(input('Filas: '))
 cols = int(input('Columnas: '))
 
+"LLama la a la funcion con las variables"
 padding(img, rows, cols)
   
