@@ -27,4 +27,12 @@ def padding (mat, rows, cols):
     plt.title("Imagen con Padding")
     plt.show()
    
-    
+"Se pide la imagen (matriz original), y las dimensiones (matriz solicitada
+)"
+imagen = input('Nombre del archivo: ')
+img = cv2.imread(imagen, cv2.IMREAD_GRAYSCALE)
+rows = int(input('Filas: '))
+cols = int(input('Columnas: '))
+
+padding(img, rows, cols)
+  
