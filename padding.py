@@ -17,5 +17,14 @@ def padding (mat, rows, cols):
     "Matriz final"
     final = np.zeros((rows, cols))
     
-    
+"Ciclo for"
+    for i in range (np.shape(mat)[0]):
+        for j in range (np.shape(mat)[1]):
+            final[i + m][j + n] = mat[i, j]
+    "Matriz final"
+    print(final)
+    plt.imshow(final, cmap='gray')
+    plt.title("Imagen con Padding")
+    plt.show()
+   
     
