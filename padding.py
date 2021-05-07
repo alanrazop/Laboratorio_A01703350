@@ -1,11 +1,11 @@
+"Se utilizará esta simulación para simular como trabaja un padding con matrices e imagenes"
 "Se importan las librerías que se van a ocupar"
 import numpy as np
 import math
 import cv2
 import matplotlib.pyplot as plt
 
-"Dimension de la imagen: 920x1900
-"
+"Dimension de la imagen: 920x1900"
 
 "Funcion que convierte las matrices con numpy"
 def padding (mat, rows, cols):
@@ -27,8 +27,7 @@ def padding (mat, rows, cols):
     plt.title("Imagen con Padding")
     plt.show()
    
-"Se pide la imagen (matriz original), y las dimensiones (matriz solicitada
-)"
+"Se pide la imagen (matriz original), y las dimensiones (matriz solicitada)"
 imagen = input('Nombre del archivo: ')
 img = cv2.imread(imagen, cv2.IMREAD_GRAYSCALE)
 rows = int(input('Filas: '))
